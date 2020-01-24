@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <meta name="Desc" content="Sine wave in SVG" />
+  <title>Demonstration of K-means Clustering Algorithms</title>
+
+</head>
+<body>
+
+<div class="header mt-2 mb-2">
+  <h1>Demonstration of K-means Clustering Algorithms</h1>
+</div>
+
+<div class="desc">
+  <h4>Introduction to K-means Clustering</h4>
+  <a>k-means clustering is an iterative algorithm applied in cluster analysis. K-means clustering aims to partition a set of points distributed within a space into several clusters, whose number determined by the user, according to their locations. Its fundamental procedures are, first randomly initiate some label points on the space, and assign all the points closet to each label as one group, then move the labels to the center of the group points, and reassign all the points into new group according to their distance to the new labels. This procedure is repeated until a stability is achieved, that is labels are all in the center of each group, and no points can be assigned into a new group. K-means is very fundamental but practical, and is widely used in machine learning and data analysis.</a>
+</div>
+
+<div class="proc">
+  <h4>Procedures:</h4>
+  <ul><li>(1) select the number of groups, that you plan to cluster your points into, and click "reset and start a new play"</li></ul>
+  <ul><li>(2) click on the canvas, to make some points</li></ul>
+  <ul><li>(3) press "step" continuously to see how k-means cluster these points</li></ul>
+</div>
+
+<div id="kmeans">
+  <div>
+    <svg></svg>
+  </div>
+  <fieldset style="display: inline; margin: .8em 0 1em 0; border: 1px solid #999; padding: .5em">
+  <!--<div><label for="N">Number of points:</label><input type="number" id="N" min="2" max="1000" value="100"></div>-->
+  <div><label for="K">Classify into how many groups?:</label><input type="number" id="K" min="2" max="50" value="5"></div>
+  <div><button id="reset">reset and start a new play</button></div>
+    <div><button id="step">step</button></div>
+    </fieldset>
+  <p>Cluster number</p>
+  <a>current stage</a>
+</div>
+
+
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script src="yum.js"></script>
+
+
+
+
+</body>
+</html>
